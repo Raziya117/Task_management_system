@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:white;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color:darkgreen;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.create-board, .create-task {
+  display: flex;
+  gap: 10px;
+}
+
+.create-board input, .create-task input, .create-task select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.create-board button, .create-task button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-board button:hover, .create-task button:hover {
+  background-color: #45a049;
+}
+
+.boards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.board {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.delete-board {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-card {
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 10px;
+  background-color:  lightgoldenrodyellow;
+}
+
+.task-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.task-card button {
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.task-card button:hover {
+  opacity: 0.8;
+}
+
+.delete-task {
+  background-color: #f44336;
+  color: white;
+}
+
+.task-card button:not(.delete-task) {
+  background-color: #13bddf;
+  color: white;
+}
+
+.create-task label {
+  margin-left: 5px;
+  margin-right: 5px;
+}
